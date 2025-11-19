@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
-import logoMain from "@/assets/logo-soldias-main.jpg";
+import logoMain from "../assets/logo-soldias-main.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
