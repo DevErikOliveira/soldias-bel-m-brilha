@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
-import logoMain from "../assets/logo-soldias-main.jpg";
+import logoMain from "../assets/logo_2.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +10,15 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <img src={logoMain} alt="SolDias" className="w-48 mb-4 brightness-0 invert" />
+            <img src={logoMain} alt="SolDias" className="w-48 mb-4" 
+            loading="lazy"
+              onError={(e) => {
+                console.error("Erro carregando logo:", (e.currentTarget as HTMLImageElement).src);
+                // Se quiser usar um fallback local, descomente e ajuste o import acima:
+                // (e.currentTarget as HTMLImageElement).src = logoFallback;
+              }}
+            />
+
             <p className="text-sm opacity-90 mb-4">
               Referência em projetos solares sob medida em Belém e região.
               Energia limpa, economia garantida.
