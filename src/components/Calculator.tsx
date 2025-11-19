@@ -14,9 +14,9 @@ const Calculator = () => {
   const calculateSavings = () => {
     const bill = parseFloat(monthlyBill) || 0;
     return {
-      annual: (bill * 12 * 0.9).toFixed(2), // 90% economia
-      monthly: (bill * 0.9).toFixed(2),
-      years25: (bill * 12 * 0.9 * 25).toFixed(2),
+      annual: (bill * 12 * 0.9).toFixed(2).replace('.', ','), // 90% economia
+      monthly: (bill * 0.9).toFixed(2).replace('.', ','),
+      years25: (bill * 12 * 0.9 * 25).toFixed(2).replace('.', ','),
     };
   };
 

@@ -6,16 +6,18 @@ import Portfolio from "@/components/Portfolio";
 import Technology from "@/components/Technology";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <ThemeToggle />
       <Hero />
-      <Calculator />
       <Process />
       <Benefits />
       <Portfolio />
       <Technology />
+      <Calculator />
       <Footer />
       <FloatingWhatsApp />
     </div>
