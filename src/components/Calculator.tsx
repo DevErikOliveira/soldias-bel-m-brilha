@@ -13,10 +13,14 @@ const Calculator = () => {
 
   const calculateSavings = () => {
     const bill = parseFloat(monthlyBill) || 0;
+    const formatNumber = (num: number) => {
+      return num.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    };
+    
     return {
-      annual: (bill * 12 * 0.9).toFixed(2).replace('.', ','), // 90% economia
-      monthly: (bill * 0.9).toFixed(2).replace('.', ','),
-      years25: (bill * 12 * 0.9 * 25).toFixed(2).replace('.', ','),
+      annual: formatNumber(bill * 12 * 0.9), // 90% economia
+      monthly: formatNumber(bill * 0.9),
+      years25: formatNumber(bill * 12 * 0.9 * 25),
     };
   };
 
