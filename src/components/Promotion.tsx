@@ -11,10 +11,13 @@ const Promotion = () => {
       {/* overlay para legibilidade */}
       <div className="absolute inset-0 bg-black/45 dark:bg-black/50" />
 
-      <div className="container mx-auto px-4 flex items-center justify-end relative z-10">
-        <div className="max-w-lg text-right text-white">
-          <h2 className="text-3xl font-bold mb-2 drop-shadow">
-            <Zap className="inline-block mr-2 align-middle text-solar-orange" />
+      <div className="container mx-auto px-4 flex items-center justify-center md:justify-end relative z-10">
+        <div className="max-w-lg text-center md:text-right text-white">
+          <div className="md:hidden">{/* mobile: ícone acima do título */}
+            <Zap className="block mx-auto mb-3 text-solar-orange w-8 h-8" />
+          </div>
+          <h2 className="text-3xl font-bold mb-2 drop-shadow flex items-center justify-center md:justify-end">
+            <Zap className="hidden md:inline-block mr-2 align-middle text-solar-orange w-6 h-6" />
             Promoção Relâmpago Solar!
           </h2>
           <p className="text-lg mb-4 text-white/90">
