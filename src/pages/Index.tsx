@@ -4,6 +4,7 @@ import Process from "@/components/Process";
 import Benefits from "@/components/Benefits";
 import Portfolio from "@/components/Portfolio";
 import Technology from "@/components/Technology";
+import Promotion from "@/components/Promotion";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -17,6 +18,7 @@ const Index = () => {
       <Benefits />
       <Portfolio />
       <Technology />
+      <Promotion />
       <Calculator />
       <Footer />
       <FloatingWhatsApp />
