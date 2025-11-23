@@ -11,8 +11,8 @@ const NosMove = () => {
       <div className="container mx-auto px-4 relative z-10 flex items-center justify-center md:justify-start">
         <div className="max-w-3xl mx-auto md:mx-0 md:mr-auto text-center md:text-left text-white">
           <h2 className="font-bold mb-4">
-            <span className="block text-[32px] md:text-[38px] text-solar-orange mb-2">O Sol que Nos Move</span>
-            <span className="block text-[30px] md:text-[36px]">O Potencial de um Sol que Ninguém Mais Tem</span>
+            <span className="block text-[32px] md:text-[38px] text-solar-orange mb-2">O Potencial de um Sol que Só a Gente Tem</span>
+            {/* <span className="block text-[30px] md:text-[36px]">O Potencial de um Sol que Só a Gente Tem</span> */}
           </h2>
 
           <p className="text-base md:text-lg opacity-95 mb-4">
