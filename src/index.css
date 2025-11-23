@@ -103,11 +103,14 @@ All colors MUST be HSL.
 
 @layer base {
   * {
-    @apply border-border;
+    /* aplica a cor de borda baseada na variável --border */
+    border-color: hsl(var(--border));
   }
 
   body {
-    @apply bg-background text-foreground;
+    /* aplica background e cor do texto usando as variáveis do design system */
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
 
   /* Replace explicit white backgrounds with the light orange tint in light mode
