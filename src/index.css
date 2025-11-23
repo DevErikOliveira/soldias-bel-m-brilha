@@ -8,13 +8,15 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* Light-mode backgrounds: replace pure white with a very light orange tint
+       (different from the main identity orange --solar-orange) */
+    --background: 38 92% 97%; /* very light orange */
     --foreground: 0 0% 0%;
 
-    --card: 0 0% 100%;
+    --card: 38 92% 98%;
     --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 100%;
+    --popover: 38 92% 98%;
     --popover-foreground: 0 0% 0%;
 
     --primary: 0 0% 0%;
@@ -23,8 +25,8 @@ All colors MUST be HSL.
     --secondary: 38 92% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 38 92% 94%;
+    --muted-foreground: 0 0% 28%;
 
     --accent: 38 92% 50%;
     --accent-foreground: 0 0% 100%;
@@ -32,8 +34,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 38 92% 88%;
+    --input: 38 92% 88%;
     --ring: 38 92% 50%;
 
     --radius: 0.75rem;
@@ -43,7 +45,7 @@ All colors MUST be HSL.
     --solar-orange-dark: 38 92% 40%;
     --grid-dark: 0 0% 5%;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 38 92% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
 
@@ -106,5 +108,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Replace explicit white backgrounds with the light orange tint in light mode
+     This helps catch places that use `bg-white` utility directly. */
+  body:not(.dark) .bg-white {
+    background-color: hsl(var(--background)) !important;
   }
 }
