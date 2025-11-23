@@ -3,6 +3,7 @@ import Calculator from "@/components/Calculator";
 import Process from "@/components/Process";
 import Benefits from "@/components/Benefits";
 import Portfolio from "@/components/Portfolio";
+import NosMove from "@/components/NosMove";
 import Technology from "@/components/Technology";
 import Promotion from "@/components/Promotion";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ const Index = () => {
       <Hero />
       <Process />
       <Benefits />
+      <NosMove />
       <Portfolio />
       <Technology />
       <Promotion />

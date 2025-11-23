@@ -2,7 +2,7 @@ import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const FloatingWhatsApp = () => {
-  const whatsappNumber = "5591000000000";
+  const whatsappNumber = "5521959329159";
   const whatsappMessage = encodeURIComponent(
     "Olá! Vi o site da SolDias e quero saber mais sobre energia solar!"
   );
