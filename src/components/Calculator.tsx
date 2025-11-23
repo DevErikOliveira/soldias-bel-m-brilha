@@ -158,7 +158,7 @@ const Calculator = () => {
                       className="w-full bg-green-600 hover:bg-green-700 text-white text-lg h-14"
                     >
                       <MessageCircle className="mr-2" size={24} />
-                      Quero essa Economia! Falar com Especialista
+                      Quero essa Economia Agora!
                     </Button>
                   </a>
 
