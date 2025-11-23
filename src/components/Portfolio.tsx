@@ -92,19 +92,19 @@ const Portfolio = () => {
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          <div className="text-center p-6 bg-muted rounded-xl">
+          <div className="text-center p-6 bg-muted rounded-xl border-2 border-solar-orange/30 hover:bg-solar-orange/5 hover:scale-105 transition-all duration-300 hover:shadow-lg cursor-pointer focus:outline-none focus:ring-4 focus:ring-solar-orange/10" role="button" tabIndex={0}>
             <p className="text-4xl font-bold text-solar-orange mb-2">200+</p>
             <p className="text-sm text-muted-foreground">Projetos em Belém</p>
           </div>
-          <div className="text-center p-6 bg-muted rounded-xl">
+          <div className="text-center p-6 bg-muted rounded-xl border-2 border-solar-orange/30 hover:bg-solar-orange/5 hover:scale-105 transition-all duration-300 hover:shadow-lg cursor-pointer focus:outline-none focus:ring-4 focus:ring-solar-orange/10" role="button" tabIndex={0}>
             <p className="text-4xl font-bold text-solar-orange mb-2">5+</p>
             <p className="text-sm text-muted-foreground">Anos de Experiência</p>
           </div>
-          <div className="text-center p-6 bg-muted rounded-xl">
+          <div className="text-center p-6 bg-muted rounded-xl border-2 border-solar-orange/30 hover:bg-solar-orange/5 hover:scale-105 transition-all duration-300 hover:shadow-lg cursor-pointer focus:outline-none focus:ring-4 focus:ring-solar-orange/10" role="button" tabIndex={0}>
             <p className="text-4xl font-bold text-solar-orange mb-2">100%</p>
             <p className="text-sm text-muted-foreground">Clientes Satisfeitos</p>
           </div>
-          <div className="text-center p-6 bg-muted rounded-xl">
+          <div className="text-center p-6 bg-muted rounded-xl border-2 border-solar-orange/30 hover:bg-solar-orange/5 hover:scale-105 transition-all duration-300 hover:shadow-lg cursor-pointer focus:outline-none focus:ring-4 focus:ring-solar-orange/10" role="button" tabIndex={0}>
             <p className="text-4xl font-bold text-solar-orange mb-2">24h</p>
             <p className="text-sm text-muted-foreground">Resposta Rápida</p>
           </div>
